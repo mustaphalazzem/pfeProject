@@ -1,0 +1,315 @@
+  @media all{
+    .slick-slider{position:relative;display:block;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent;}
+    .slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0;}
+    .slick-list:focus{outline:none;}
+    .slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}
+    .slick-track{position:relative;top:0;left:0;display:block;margin-left:auto;margin-right:auto;}
+    .slick-track:after{clear:both;}
+    .slick-track:before,.slick-track:after{display:table;content:'';}
+    .slick-slide{display:none;float:left;height:100%;min-height:1px;}
+    .slick-slide img{display:block;}
+    .slick-initialized .slick-slide{display:block;}
+    body a{text-decoration:none;}
+    .ttl{font-family:'Toyota Type';font-weight:bold;text-transform:uppercase;color:#000;}
+    .ttl--xl{font-size:1.125rem;}
+    @media only screen and (min-width:768px){
+    .ttl--xl{font-size:2.1875rem;}
+    }
+    main p{font-family:'Toyota Type',helvetica,sans-serif;font-size:.9375rem;line-height:1.5;color:#000;}
+    ::placeholder{font-family:'Toyota Type',helvetica,sans-serif;color:#000;opacity:1;-ms-filter:none;filter:none;font-weight:500;}
+    :-ms-input-placeholder{font-family:'Toyota Type',helvetica,sans-serif;color:#000;font-weight:500;}
+    ::-ms-input-placeholder{font-family:'Toyota Type',helvetica,sans-serif;color:#000;font-weight:500;}
+    .hero-banner{background-color:rgba(0,0,0,0.51);border-bottom:1px solid #d8d8d8;overflow:hidden;padding-bottom:0;position:relative;}
+    .hero-banner::after{content:'';display:table;clear:both;}
+    @media only screen and (min-width:600px){
+    .hero-banner{border:0;padding-bottom:0;min-height:34.9479166667vw;}
+    }
+    @media only screen and (min-width:1050px){
+    .hero-banner{min-height:34.9479166667vw;padding-bottom:0;border-bottom:0;}
+    }
+    .hero-banner .bt-recomendacoes{background:url("https://www.toyota.com.br/wp-content/themes/toyota/home/dist/assets/img/hero-banner/btn-recomendacoes.jpg") 100% 50% #e51524 no-repeat;display:none;left:0;height:45px;position:absolute;top:10%;text-indent:-99999px;z-index:3;width:90px;-webkit-transition:width 0.5s;-moz-transition:width 0.5s;-o-transition:width 0.5s;-ms-transition:width 0.5s;transition:width 0.5s;}
+    .hero-banner .bt-recomendacoes:hover{width:375px;}
+    @media only screen and (min-width:1024px){
+    .hero-banner .bt-recomendacoes{display:block;}
+    }
+    @media only screen and (min-width:1440px){
+    .hero-banner .bt-recomendacoes{-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;width:250px;}
+    }
+    @media only screen and (min-width:1900px){
+    .hero-banner .bt-recomendacoes{height:60px;width:375px;}
+    }
+    .hero-banner--gradient,.hero-banner--gradient-mobile{color:#000;position:absolute;top:45.052083vw;left:0;display:block;height:34.9479166667vw;width:100vw;background-image:-webkit-linear-gradient(270deg, rgba(0,0,0,0) 2%, currentColor 100%);background-image:-moz-linear-gradient(270deg, rgba(0,0,0,0) 2%, currentColor 100%);background-image:-o-linear-gradient(270deg, rgba(0,0,0,0) 2%, currentColor 100%);background-image:-ms-linear-gradient(270deg, rgba(0,0,0,0) 2%, currentColor 100%);background-image:linear-gradient(-180deg, rgba(0,0,0,0) 2%, currentColor 100%);z-index:1;}
+    @media only screen and (min-width:600px){
+    .hero-banner--gradient,.hero-banner--gradient-mobile{top:0;height:34.9479166667vw;width:45.7291666667vw;background-image:-webkit-linear-gradient(180deg, rgba(0,0,0,0) 2%, currentColor 50%);background-image:-moz-linear-gradient(180deg, rgba(0,0,0,0) 2%, currentColor 50%);background-image:-o-linear-gradient(180deg, rgba(0,0,0,0) 2%, currentColor 50%);background-image:-ms-linear-gradient(180deg, rgba(0,0,0,0) 2%, currentColor 50%);background-image:linear-gradient(270deg, rgba(0,0,0,0) 2%, currentColor 50%);}
+    }
+    @media only screen and (max-width:800px){
+    .hero-banner--gradient,.hero-banner--gradient-mobile{display:none;}
+    }
+    @media only screen and (min-width:721px) and (max-width:1024px){
+    .hero-banner--gradient,.hero-banner--gradient-mobile{height:50.947917vw;}
+    }
+    .hero-banner--gradient-mobile{display:none;}
+    @media only screen and (max-width:800px){
+    .hero-banner--gradient-mobile{display:block;}
+    }
+    .hero-banner .reflow{-webkit-background-origin:border;-moz-background-origin:border;background-origin:border-box;}
+    .hero-banner:before,.hero-banner:after{content:" ";display:block;position:absolute;top:0;background-color:inherit;height:34.9479166667vw;width:61.125vw;left:-177px;-webkit-transform:rotate(-66deg);-moz-transform:rotate(-66deg);-o-transform:rotate(-66deg);-ms-transform:rotate(-66deg);transform:rotate(-66deg);z-index:1;}
+    @media only screen and (max-width:800px){
+    .hero-banner:before,.hero-banner:after{-webkit-transform:rotate(165deg);-moz-transform:rotate(165deg);-o-transform:rotate(165deg);-ms-transform:rotate(165deg);transform:rotate(165deg);right:-25vw;width:150vw;height:20vw;top:62.947917vw;left:auto;}
+    }
+    @media only screen and (min-width:721px) and (max-width:1024px){
+    .hero-banner:before,.hero-banner:after{width:90.125vw;left:-228px;}
+    }
+    .hero-banner:before{-webkit-transform:rotate(66deg);-moz-transform:rotate(66deg);-o-transform:rotate(66deg);-ms-transform:rotate(66deg);transform:rotate(66deg);left:-177px;-webkit-transition:opacity 0.5s ease-in;-moz-transition:opacity 0.5s ease-in;-o-transition:opacity 0.5s ease-in;-ms-transition:opacity 0.5s ease-in;transition:opacity 0.5s ease-in;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);}
+    @media only screen and (min-width:721px) and (max-width:1024px){
+    .hero-banner:before{left:-228px;}
+    }
+    @media only screen and (max-width:800px){
+    .hero-banner:before{-webkit-transform:rotate(-165deg);-moz-transform:rotate(-165deg);-o-transform:rotate(-165deg);-ms-transform:rotate(-165deg);transform:rotate(-165deg);left:auto;}
+    }
+    @media only screen and (min-width:721px) and (max-width:1024px){
+    .hero-banner:after{width:104vw!important;}
+    }
+    .hero-banner.shade-1:before{opacity:1;-ms-filter:none;filter:none;}
+    .hero-banner__container{position:relative;width:100%;padding:0;float:right;background:#000;}
+    @media only screen and (min-width:600px){
+    .hero-banner__container{background:#e9e9e9;width:77.3958333333vw;min-height:34.9479166667vw;}
+    }
+    @media only screen and (min-width:721px) and (max-width:1024px){
+    .hero-banner__container{height:34.947917vw;min-height:0;}
+    }
+    .hero-banner__container .slider--hero-banner-content-item{color:#fff;}
+    .hero-banner__container h1{min-height:58px;color:inherit;}
+    .hero-banner__container .hero-banner--content p{color:inherit;}
+    .hero-banner .slider--hero-banner-content .slick-slide{min-height:250px;}
+    @media only screen and (min-width:1050px){
+    .hero-banner .slider--hero-banner-content .slick-slide{min-height:300px;}
+    }
+    .hero-banner .slider--hero-banner-content > div{display:none;}
+    .hero-banner .slider--hero-banner-content > div:first-child{display:block;}
+    .hero-banner .slider--hero-banner{position:static;}
+    .hero-banner .slider--hero-banner img{width:100vw;height:auto;}
+    @media only screen and (min-width:600px){
+    .hero-banner .slider--hero-banner img{width:78vw;}
+    }
+    @media only screen and (min-width:1050px){
+    .hero-banner .slider--hero-banner img{width:100%;height:34.9479166667vw;}
+    }
+    @media only screen and (min-width:600px){
+    .hero-banner .slider--hero-banner{height:100%;width:100%;max-height:34.9479166667vw;position:absolute;right:0;top:0;}
+    }
+    .hero-banner--content{width:74.7vw;margin:0 auto;padding:8.5% 6%;text-align:center;-webkit-transform:translate(0,-15vw);-moz-transform:translate(0,-15vw);-o-transform:translate(0,-15vw);-ms-transform:translate(0,-15vw);transform:translate(0,-15vw);position:relative;z-index:3;}
+    @media only screen and (min-width:600px){
+    .hero-banner--content{float:left;clear:none;text-align:inherit;width:22.75%;margin-left:0%;margin-right:3%;text-align:left;-webkit-transform:translate(0%,0%);-moz-transform:translate(0%,0%);-o-transform:translate(0%,0%);-ms-transform:translate(0%,0%);transform:translate(0%,0%);position:absolute;top:auto;bottom:4vw;z-index:2;left:-14.427083vw;padding:40px 40px;}
+    .hero-banner--content::after{content:'';display:table;clear:both;}
+    .hero-banner--content:last-child{margin-right:0%;}
+    }
+    @media only screen and (min-width:1050px){
+    .hero-banner--content{bottom:4vw;}
+    }
+    @media only screen and (min-width:721px) and (max-width:1366px){
+    .hero-banner--content{float:left;clear:none;text-align:inherit;width:31.33333333333333%;margin-left:0%;margin-right:3%;bottom:0;}
+    .hero-banner--content::after{content:'';display:table;clear:both;}
+    .hero-banner--content:last-child{margin-right:0%;}
+    }
+    @media only screen and (min-width:1441px){
+    .hero-banner--content{bottom:6vw;left:-6.427083vw;}
+    }
+    @media only screen and (min-width:1900px){
+    .hero-banner--content{bottom:8vw;left:-4.4270833333vw;}
+    }
+    .hero-banner--content.loaded{opacity:1;-ms-filter:none;filter:none;-webkit-transition:opacity 0.5s ease-in;-moz-transition:opacity 0.5s ease-in;-o-transition:opacity 0.5s ease-in;-ms-transition:opacity 0.5s ease-in;transition:opacity 0.5s ease-in;}
+    .hero-banner--content .loader-slider{color:#fff;margin-top:20px;display:block;position:relative;top:20px;}
+    @media only screen and (min-width:600px){
+    .hero-banner--content .loader-slider{top:0;}
+    }
+    .hero-banner--content .loader-slider .number-loader{color:inherit;display:block;float:left;font-size:17px;line-height:22px;letter-spacing:.11px;font-weight:bold;position:relative;top:6px;}
+    .hero-banner--content .loader-slider .loader-bar{background:#fff;height:2px;width:110px;display:block;float:left;margin:17px 0 0 20px;}
+    .hero-banner--content .loader-slider .loader-bar span{display:block;width:0%;background:#f00;height:2px;}
+    .hero-banner--content .loader-slider .loader-bar span.run-animation{-webkit-animation:progressBar 5s ease;-moz-animation:progressBar 5s ease;-o-animation:progressBar 5s ease;-ms-animation:progressBar 5s ease;animation:progressBar 5s ease;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;-ms-animation-fill-mode:both;animation-fill-mode:both;}
+    .hero-banner--content h1{font-size:16px;line-height:25px;font-weight:bold;text-transform:uppercase;text-align:center;margin:0 auto;max-width:100%;}
+    @media only screen and (min-width:600px){
+    .hero-banner--content h1{margin:0;text-align:left;}
+    }
+    @media only screen and (min-width:1050px){
+    .hero-banner--content h1{margin:0;text-align:left;}
+    }
+    .hero-banner--content h1 img{margin:0 auto;}
+    @media only screen and (min-width:600px){
+    .hero-banner--content h1 img{margin:0;}
+    }
+    @media only screen and (min-width:1050px){
+    .hero-banner--content h1 img{margin:0;}
+    }
+    @media only screen and (min-width:600px){
+    .hero-banner--content h1{font-size:25px;line-height:35px;text-align:left;max-width:100%;}
+    }
+    .hero-banner--content p{font-size:.875rem;line-height:19px;text-align:center;margin:20px auto;}
+    @media only screen and (min-width:600px){
+    .hero-banner--content p{text-align:left;}
+    }
+    @media only screen and (min-width:1050px){
+    .hero-banner--content p{text-align:left;}
+    }
+    .hero-banner--content .btn{max-width:156px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:block;width:100%;margin:0 auto;}
+    @media only screen and (min-width:800px){
+    .hero-banner--content .btn{margin:0;}
+    }
+    .hero-banner--content .lnk{color:inherit;margin-top:15px;background:url("https://www.toyota.com.br/wp-content/themes/toyota/home/dist/assets/img/icons/ico-arrow-lnk-white.svg") 100% 90% no-repeat;}
+    @media only screen and (min-width:600px){
+    .hero-banner--content .lnk{margin:15px 0 0;}
+    }
+    @media only screen and (min-width:1050px){
+    .hero-banner--content .lnk{margin:15px 0 0;}
+    }
+    .hero-banner--content .slick-arrow{background:#f00 url("https://www.toyota.com.br/wp-content/themes/toyota/home/dist/assets/img/icons/ico-arrow-slider.svg") 50% 50% no-repeat;border:0;position:absolute;bottom:-27px;top:auto;left:258px;padding:16.5px 23px;text-indent:-999999px;z-index:1;outline:0;cursor:pointer;display:none;-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;-ms-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
+    .hero-banner--content .slick-arrow:hover{background-color:#c41020;}
+    @media only screen and (min-width:600px){
+    .hero-banner--content .slick-arrow{bottom:23px;}
+    }
+    .hero-banner--content .slick-prev{display:none;left:210px;}
+    @media only screen and (min-width:1050px){
+    .hero-banner--content .slick-prev{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);display:block;}
+    }
+    .hero-banner--content .slick-next{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);display:none;}
+    @media only screen and (min-width:1050px){
+    .hero-banner--content .slick-next{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);display:block;}
+    }
+    .hero-banner .lazy-hero-banner img{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);}
+    .hero-banner .lazy-hero-banner.loaded img{opacity:1;-ms-filter:none;filter:none;-webkit-transition:opacity 0.3s ease-in;-moz-transition:opacity 0.3s ease-in;-o-transition:opacity 0.3s ease-in;-ms-transition:opacity 0.3s ease-in;transition:opacity 0.3s ease-in;}
+    @media only screen and (min-width:1050px){
+    .loaded .slick-prev{display:block;-webkit-transition:opacity 0.3s ease-in;-moz-transition:opacity 0.3s ease-in;-o-transition:opacity 0.3s ease-in;-ms-transition:opacity 0.3s ease-in;transition:opacity 0.3s ease-in;opacity:1;-ms-filter:none;filter:none;}
+    }
+    @media only screen and (min-width:1050px){
+    .loaded .slick-next{display:block;-webkit-transition:opacity 0.3s ease-in;-moz-transition:opacity 0.3s ease-in;-o-transition:opacity 0.3s ease-in;-ms-transition:opacity 0.3s ease-in;transition:opacity 0.3s ease-in;opacity:1;-ms-filter:none;filter:none;}
+    }
+    .hero-banner .slick-slider:not(.slider--hero-banner-content) .slick-track{height:80.625vw!important;}
+    @media only screen and (min-width:600px){
+    .hero-banner .slick-slider:not(.slider--hero-banner-content) .slick-track{height:auto!important;}
+    }
+    .btn{background:#fff;cursor:pointer;display:inline-block;font-size:.75rem;letter-spacing:1px;line-height:45px;padding:0 25px;font-weight:bold;text-align:center;text-decoration:none;text-transform:uppercase;white-space:nowrap;font-family:'Toyota Type';font-weight:bold;}
+    @media only screen and (min-width:1050px){
+    .btn{-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out;}
+    }
+    .btn--red{background:#ef1b2f;color:#fff;}
+    @media only screen and (min-width:1050px){
+    .btn--red:hover{background:#c41020;}
+    }
+    
+    .lnk{font-size:12px;letter-spacing:1px;line-height:15px;margin:0 auto;padding-right:22px;display:inline-block;text-decoration:none;text-transform:uppercase;white-space:nowrap;font-family:'Toyota Type';font-weight:bold;color:#fff;}
+    @media only screen and (min-width:1050px){
+    .lnk{-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out;}
+    }
+    }
+  .css-1k7wk8z{width:100%;
+    padding:15px 0px 18px 17px;
+    border:0;
+    height:50px;
+    width: 400px;
+    box-sizing:border-box;
+    box-shadow:0 2px 2px 0 rgba(185, 180, 180, 0.19);
+    border-radius:4px;
+    font-size:14px;
+    color:#000000;}
+  
+    .sidebar {
+     
+      margin : 100px;
+     
+  }
+  .result {
+    margin-left: 100px;
+    color: #800000;
+      margin-top: 50px;
+      font-size: 1.5em;
+   
+      padding-right: 15px;
+  }
+  .container {
+    max-width: 100%;
+    padding:50px
+}
+.card{border: 0px solid rgba(0, 0, 0, 0);
+    border-radius: 0;
+    box-shadow: 2px 2px 4px #000000;
+  }
+.card-body{
+    padding-left: 10px;
+    background-color: rgb(243, 243, 243);
+}
+.datepicker-toggle {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+height: 50px;
+margin-left: 4px;
+  }
+  .datepicker-toggle-button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    }
+    
+    .datepicker-input {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+    .datepicker-input::-webkit-calendar-picker-indicator {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+    }
+    #test{
+        display: flex;
+    }
+strong{
+    font-family:Georgia;
+}
+.sort {
+  display: inline-block;
+  position: relative;
+  width: 25px;
+height: 30px;
+margin-right: 3%;
+
+}
+.sort-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  }
+  
+  #sort-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  .pos{
+    text-align: end;
+    margin-right: 1%;
+    margin-bottom: 1%;
+  }
+  #trie-text{
+    vertical-align: super;
+    font-family: Georgia;
+  }

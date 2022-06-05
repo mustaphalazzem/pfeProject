@@ -1,0 +1,50 @@
+<table class="table table-hover">
+    <thead>
+  <div style="margin-top: -10px;" class="table-responsive">
+    <div class="table-wrapper">
+      <div class="table-title">
+        <div class="row">
+          <div class="col-xs-5">
+            <h2>Liste <b>des excursions annulées</b></h2>
+          </div>
+          <div class="col-xs-7">
+            <a (click)="toAdd()" class="btn btn-danger"><i class="material-icons">&#xE147;</i> <span>Creer une nouvelle
+                excursion</span></a>
+          </div>
+        </div>
+      </div>
+  
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>titre</th>
+            <th>depart</th>
+            <th>Destination</th>
+           
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+         
+    
+               <tr *ngFor="let excursion of excursions| paginate:{itemsPerPage:5,currentPage:page};"
+          [ngClass]="[excursion % 2 == 1 ? 'odd-row' : 'even-row']">  
+                <td>{{excursion.nom}}</td>
+                <td>{{excursion.destination}}</td>
+                <td>{{excursion.prix}}</td>
+                <td> 
+                  <a  (click)="excursionDetails(excursion._id)" class="view" title="Consulter" data-toggle="tooltip"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                  <a (click)="edit(excursion._id)" class="edit" title="Modifier" data-toggle="tooltip"><i
+                  class="material-icons">&#xE254;</i></a>
+                  <a  class="delete" (click)="deleteExcursion(excursion)" title="Supprimer" data-toggle="tooltip"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                  <a (click)="liste(excursion._id)" class="liste"  title="liste des participants" data-toggle="tooltip"><i class="fa fa-plus" aria-hidden="true"></i></a>
+  
+            </td>
+          </tr>
+        </tbody>
+      </table> 
+      <div class="clearfix">
+        <div class="hint-text">Page numéro <b>{{page}}</b></div>
+        <pagination-controls class="pagination" (pageChange)="page=$event"  nextLabel="Suivant" previousLabel="Précédent"></pagination-controls>
+      </div>
+       

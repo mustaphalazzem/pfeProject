@@ -1,0 +1,47 @@
+<table class="table table-hover">
+    <thead>
+  <div style="margin-top: -10px;" class="table-responsive">
+    <div class="table-wrapper">
+      <div class="table-title">
+        <div class="row">
+          <div class="col-xs-5">
+            <h2>Liste <b>des excursions</b></h2>
+          </div>
+          <div class="col-xs-7">
+            <a  class="btn btn-danger"><i class="material-icons">&#xE147;</i> <span>Creer une nouvelle
+                excursion</span></a>
+          </div>
+        </div>
+      </div>
+  
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>titre</th>
+            <th>depart</th>
+            <th>Destination</th>
+           
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+         
+    
+               <tr *ngFor="let bus of buss| paginate:{itemsPerPage:5,currentPage:page};"
+          [ngClass]="[bus % 2 == 1 ? 'odd-row' : 'even-row']">  
+                <td>{{bus.marque}}</td>
+                <td>{{bus.nb_place_bus}}</td>
+                
+                <td> {{bus.email}}</td>
+                <td> 
+                  <a  (click)="busDetails(bus._id)" class="view" title="Consulter" data-toggle="tooltip"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                 
+            </td>
+          </tr>
+        </tbody>
+      </table> 
+      <div class="clearfix">
+        <div class="hint-text">Page numéro <b>{{page}}</b></div>
+        <pagination-controls class="pagination" (pageChange)="page=$event"  nextLabel="Suivant" previousLabel="Précédent"></pagination-controls>
+      </div>
+       

@@ -1,0 +1,75 @@
+<div *ngIf="excursion">
+  <table class="table table-hover">
+    <thead>
+      <div style="margin-top: -10px;" class="table-responsive">
+        <div class="table-wrapper">
+          <div class="table-title">
+            <div class="row">
+              <div class="col-xs-5">
+                <h2>Detail <b>d'excursion</b></h2>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </thead>
+  </table>
+  <div>
+    <h3 style="margin-left:3% ; margin-top: -4%; "> {{excursion.nom}}</h3>
+  </div>
+  <div class="exp">
+    <div class="">
+      <img class="tranche1" src="assets/images/banzart.jpeg" alt="...">
+    </div>
+
+    <div class="exp1">
+      <img class="tranche2" src="assets/images/banzart.jpeg" alt="...">
+
+      <img class="tranche2" src="assets/images/banzart.jpeg" alt="...">
+    </div>
+    <div class="exp2">
+      <img class="tranche2" src="assets/images/banzart.jpeg" alt="...">
+
+
+      <img class="tranche2" src="assets/images/banzart.jpeg" alt="...">
+    </div>
+  </div>
+
+  <div class="cc">
+    <div>
+      
+      
+        <div>
+          <h4>Description</h4>
+        </div>
+
+        <div>
+          <label> Decouvrez notre destination "{{excursion.destination}}"
+            <b>prix : </b>{{excursion.prix}}</label>
+        </div>
+        <label><b>depart : </b>{{excursion.depart}}</label>
+        <div>
+          <label><b>date depart: </b>{{excursion.date_depart}}</label>
+        </div>
+
+        <div>
+          <label><b>date de retour : </b>{{excursion.date_fin}}</label>
+
+        </div>
+
+      
+    </div>
+    
+    <div class="aa">
+    <div>
+      <button type="button" class="btn btn-primary btn-lg btn-block" (click)="ajouter(excursion,id)">Ajouter aux panier</button>
+    </div>  
+      
+      <div style="margin-left:120%">
+        <button type="button" class="btn btn-primary btn-lg btn-block" >Block level button</button>
+        
+      
+    </div></div>
+  </div>
+</div>

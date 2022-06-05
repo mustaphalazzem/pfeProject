@@ -1,0 +1,98 @@
+
+
+  <div style="margin-top: -10px;" class="table-responsive">
+    <div class="table-wrapper">
+      <div class="table-title">
+        <div class="row">
+          <div class="col-xs-5">
+            <h2>Modifier excursion</h2>
+          </div>
+          <div class="col-xs-7">
+            <a (click)="return()" class="btn btn-danger"><i class="fa fa-arrow-circle-left" ></i> <span>Annuler
+    </span></a>
+          </div>
+        </div>
+      </div>
+<div class="container">
+    <form [formGroup]="excursionForm" (ngSubmit)="updateEcursion()">
+        <div  class ="submit-form">
+            <div>
+                <div class="form-group mb-3">
+                    <input [ngClass]="{'invalid' : excursionForm.controls['nom'].invalid && submitted}"
+                        type="text"
+                        class="form-control"
+                        id="nom"
+                        formControlName="nom"
+                        placeholder="Nom excursion"
+                    />
+                </div>
+
+                <div class="form-group mb-3">
+                    <input [ngClass]="{'invalid' : excursionForm.controls['destination'].invalid && submitted}"
+                        class="form-control"
+                        id="destination"
+                        formControlName="destination"
+                        placeholder="Destination"
+                    />
+                </div>
+
+                <div class="form-group mb-3">
+                    <input [ngClass]="{'invalid' : excursionForm.controls['depart'].invalid && submitted}"
+                        class="form-control"
+                        id="depart"
+                        formControlName="depart"
+                        placeholder="Depart"
+                    />
+                </div>
+                <div class="test">
+                <label for="date_depart" style="width:7%" > Date de depart</label>
+                <div class="form-group mb-3" style="margin-left: 5%;">
+                    <span class="datepicker-toggle">
+                        <span class="datepicker-toggle-button">
+                        </span>
+                        <input type="date" class="datepicker-input"
+                        [ngClass]="{'invalid' : excursionForm.controls['date_depart'].invalid && submitted}"
+                        id="date_depart"
+                        formControlName="date_depart"
+                        name="date_depart"
+                        >
+                    </span>
+                </div>
+                </div>
+               <div class="test">
+                <label for="date_fin" style="width:8%"> Date de fin </label>
+                <div class="input-group mb-3" style="margin-left: 5%;">
+                    
+                        <span class="datepicker-toggle">
+                            <span class="datepicker-toggle-button">
+                            </span>
+                            <input type="date" class="datepicker-input"
+                            [ngClass]="{'invalid' : excursionForm.controls['date_fin'].invalid && submitted}"
+                            id="date_fin"
+                            formControlName="date_fin"
+                            name="date_fin"
+                            >
+                        </span>
+                        
+                    </div>   
+                </div>
+
+              
+
+                <div class="form-group mb-3">
+                    <input [ngClass]="{'invalid' : excursionForm.controls['prix'].invalid && submitted}"
+                        class="form-control"
+                        id="prix"
+                        formControlName="prix"
+                        placeholder="Prix"
+                    />
+                </div>
+
+               
+
+                <button (click)="updateEcursion()" class="btn btn-danger">Modifier</button>
+            </div>
+
+        </div>
+    </form>
+</div>

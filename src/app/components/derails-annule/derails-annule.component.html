@@ -1,0 +1,27 @@
+
+    <h2>Details du Client</h2> 
+    
+    <hr/>
+    <div *ngIf="nonexcursion">
+      <div>
+          <div>
+            <label><b>Nom: </b>{{nonexcursion.nom}}</label> 
+          </div>
+          <div>
+            <label><b>prix </b>{{nonexcursion.prix}}</label> 
+          </div>
+          <div>
+            <label><b>destination </b>{{nonexcursion.destination}}</label> 
+          </div>
+          <div>
+            <label><b>depart</b>{{nonexcursion.date_depart}}</label> 
+          </div>
+          <div>
+            
+          
+      </div>
+      
+    </div>
+    <br>
+    <button (click)="list()" class="btn btn-primary">Retour</button><br>
+    

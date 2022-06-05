@@ -1,0 +1,64 @@
+<div>
+    <h3>Panier</h3>
+</div>
+<div  class="test">
+    <div *ngFor= "let pan of client.excursions" >
+    <div class="container-fluid"   >
+        <div   class="row">
+            <div  class="col-12 mt-3"  >
+                <div  class="card"  >
+                    <div class="card-horizontal" >
+                        <div class="img-square-wrapper">
+                            <img class="" src="http://via.placeholder.com/300x180" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <div >
+                                <h4 class="card-title">{{pan.destination}}</h4>
+                                <p class="card-text">{{pan.depart_exc}}
+                                    <br>{{ pan.date_depart}}
+                                </p>
+                                <p>{{pan.prix}}</p>
+                            </div>
+                            
+                           
+                        </div>
+                        <div class="row">
+                            <span (click)="deleteex(id,pan.idexcursion)">
+                                <i class="fa fa-trash fa-2x " aria-hidden="true"></i>
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+ <h2> Total (N Articles) {{nombre()}} Prix {{prix()}} DT </h2> 
+    <button type="button" class="btn btn-danger" (click)="open(mymodal)">payer</button>
+    <ng-template #mymodal let-modal style="height:500px">
+        <div class="modal-body">
+            <div class="form-title text-center">
+                <h4>Selectionner le mode de payement</h4>
+
+            </div>
+            <div class="d-flex  text-center" style="display: flex;" style="margin-left: 10%">
+                <i class="fa fa-credit-card-alt fa-3x" aria-hidden="true" style="margin-right:100% "
+                    style="margin-top: 5%;"> </i>
+                <h5 class="carte"> Carte bancaire </h5>
+            </div>
+            <div class="test3">
+                <br>
+                <div class="button4"><button type="button" class="btn btn-danger" style="width: 110px;">e-dinar</button>
+                </div>
+                <div class="button3"><button type="button" class="btn btn-danger"
+                        style="width: 110px;">MasterCard</button></div>
+            </div>
+        </div>
+
+
+
+    </ng-template>
+</div>

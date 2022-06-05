@@ -1,0 +1,76 @@
+<div class="navbar">
+  <div class="test">
+    <a href="#"><img class="logo" src="assets/images/logo1.png"> </a>
+  </div>
+  <ul>
+
+    <a class="panier" href="#"><i class="fa fa-gratipay" aria-hidden="true"></i> Favoris</a>
+    <a class="panier" *ngIf="isLoggedIn" (click)="panier()" > <i class="fa fa-shopping-cart" aria-hidden="true"></i> Panier</a>
+    <a class="panier" href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> Help</a>
+    <a class="panier" *ngIf="!isLoggedIn" (click)="open(mymodal)"><i class="fa fa-plug" aria-hidden="true"></i>
+      Connexion</a>
+    <a class="panier" *ngIf="isLoggedIn" (click)="listeexcursion()"><i class="fa fa-plug" aria-hidden="true"></i>
+      Liste excursion</a>
+      <a class="panier" *ngIf="isLoggedIn" (click)="excursioncli()"><i class="fa fa-plug" aria-hidden="true"></i>
+        Liste excursion (client) </a>
+        <a class="panier" *ngIf="isLoggedIn" (click)="excursionag()"><i class="fa fa-plug" aria-hidden="true"></i>
+          Mes excursions</a>
+        <a class="panier" *ngIf="isLoggedIn" (click)="listebus()"><i class="fa fa-plug" aria-hidden="true"></i>
+          liste bus</a>
+          <a class="panier" *ngIf="isLoggedIn" (click)="listebusannule()"><i class="fa fa-plug" aria-hidden="true"></i>
+            liste bus annulé </a>
+            <a class="panier" *ngIf="isLoggedIn" href="/ajouter_excursion"><i class="fa fa-plug" aria-hidden="true"></i>
+              ajouter excursion </a>
+        <a class="panier" *ngIf="isLoggedIn" (click)="excursionag()"><i class="fa fa-plug" aria-hidden="true"></i>
+          Liste excursion (agence)</a>
+          <a class="panier" *ngIf="isLoggedIn" (click)="logout()"><i class="fa fa-plug" aria-hidden="true"></i>
+            Deconnecter</a>
+            
+   
+      <a class="panier" *ngIf="!isLoggedIn" href="inscription" class="active"><button type="button" class="btn btn-danger"> Inscription</button></a>
+  </ul>
+
+  <ng-template #mymodal let-modal>
+    <div class="modal-body">
+      <div class="form-title text-center">
+        <h4>Vous connectez à re7la</h4>
+        <h6>Connectez-vous , ajouter des</h6>
+        <h6>acitvités à votre liste de favoris et </h6>
+        <h6>accédez à vos reservation</h6>
+      </div>
+      <div class="d-flex flex-column text-center">
+        <form *ngIf="!isLoggedIn" class="form-box px-3" name="loginForm" (ngSubmit)="f.form.valid && login()"
+          #f="ngForm" novalidate>
+          <div class="form-group">
+            <input type="text" class="form-control" name="username" [(ngModel)]="form.username" required
+              #username="ngModel">
+            <div class="alert alert-danger" role="alert" *ngIf="f.submitted && username.invalid">
+              Username is required!
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" name="mdp" [(ngModel)]="form.mdp" required
+              minlength="6" #mdp="ngModel">
+            <div class="alert alert-danger" role="alert" *ngIf="f.submitted && mdp.invalid">
+              <div *ngIf="mdp?.errors?.['required']">Password is required</div>
+              <div *ngIf="mdp?.errors?.['minlength']">
+                Password must be at least 6 characters
+              </div>
+            </div>
+          </div>
+          <a href="" class="mdp"> mot de passe oublier ?</a> <br>
+          <button type="submit" value="login" class="btn btn-danger">Connecter</button>
+        </form>
+
+
+
+      </div>
+    </div>
+
+    <div class="modal-footer d-flex justify-content-center">
+      <div class="signup-section">Vous n'êtes pas membre? <a href="inscription" class="text-info"> créer un nouveau
+          compte</a>.</div>
+
+    </div>
+  </ng-template>
+</div>

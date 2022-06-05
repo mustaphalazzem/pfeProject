@@ -1,0 +1,23 @@
+i{
+    color: rgb(85, 81, 81);}
+
+.container{
+    margin-top: 3%;
+}
+.col{
+    text-align: center;
+    font-family: Calibri;
+    padding: 4%;
+    max-height: 450px;
+    
+}
+.btn{
+    width: 50%;
+}
+#lef{
+    border-right: 1px solid rgb(0, 0, 0);
+}
+#title{
+    text-decoration: underline;
+    
+}

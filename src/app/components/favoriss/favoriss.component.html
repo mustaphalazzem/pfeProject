@@ -1,0 +1,11 @@
+<h3>Favoris</h3>
+<div ngFor=let excursion of excursions>
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="assets/images/banzart.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{finddestination(excursion.idexcrusion)}</h5>
+      <p class="card-text">Prix {{findprixx(excursion.idexcrusion)} </p>
+      <a href="#" class="btn btn-primary">Delete</a>
+    </div>
+  </div>
+</div>

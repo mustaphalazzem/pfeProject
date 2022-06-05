@@ -1,0 +1,92 @@
+<div class="container">
+    <h1><strong>CREER VOTRE COMPTE </strong></h1> 
+    <form [formGroup]="clientForm">
+        <div  class ="submit-form">
+            <div class="np">
+                <div class="form-group mb-3" id="nom">
+                    <input [ngClass]="{'invalid' : clientForm.controls['name'].invalid && submitted}"
+                        type="text"
+                        class="form-control"
+                        formControlName="name"
+                        placeholder="Nom"
+                    />
+                </div>
+
+                <div class="form-group mb-3" id="prenom">
+                    <input [ngClass]="{'invalid' : clientForm.controls['prenom'].invalid && submitted}"
+                        class="form-control" 
+                        formControlName="prenom"
+                        placeholder="Prenom"
+                    />
+                </div>
+            </div>
+                <div class="form-group mb-3">
+                    <input [ngClass]="{'invalid' : clientForm.controls['numtel'].invalid && submitted}"
+                        class="form-control"
+                        id="numtel"
+                        formControlName="numtel"
+                        placeholder="Numéro Télèphonique"
+                    />
+                </div>
+
+                <div class="input-group mb-3">
+                    <input [ngClass]="{'invalid' : clientForm.controls['email'].invalid && submitted}"
+                        type="text" 
+                        class="form-control" 
+                        placeholder="Email" 
+                        id="debut-email"
+                        formControlName="email"
+                        />
+                    <div class="input-group-append">
+                        <span class="input-group-text" aria-label="fin de mail">@example.com</span>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input [ngClass]="{'invalid' : clientForm.controls['username'].invalid && submitted}"
+                        type="text" 
+                        class="form-control" 
+                        placeholder="username" 
+                        id="username"
+                        formControlName="username"
+                        />
+                    
+                </div>
+
+                <div class="form-group mb-3">
+                    <select id="genre" formControlName="genre" class="form-control" >
+                        <optgroup label="Genre">
+                      <option value="homme" >Homme</option>
+                      <option value="femme">Femme</option></optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group mb-3">
+                    <input [ngClass]="{'invalid' : clientForm.controls['addresse'].invalid && submitted}"
+                        class="form-control"
+                        id="addresse"
+                        formControlName="addresse"
+                        placeholder="Addresse"
+                    />
+                </div>
+
+                <div class="form-group mb-3">
+                    <input [ngClass]="{'invalid' : clientForm.controls['mdp'].invalid && submitted}"
+                        class="form-control"
+                        id="mdp"
+                        formControlName="mdp"
+                        placeholder="Nouveau mot de passe"
+                        type="password"
+                    />
+                </div>
+                <!-- <div class="form-group mb-3">
+                <input  [ngClass]="{'invalid' : clientForm.controls['image'].invalid && submitted}"
+                 type="file"
+                  id="image" 
+                name="image" /></div> -->
+                <div class="col-md-12 text-center">
+                <button (click)="saveClient()" class="btn btn-danger">S'inscrire</button></div>
+            
+
+        </div>
+    </form>
+</div>

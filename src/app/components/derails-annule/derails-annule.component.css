@@ -1,0 +1,35 @@
+body{
+    font-weight: 300;
+    background-color: #f1f8fc;
+    font-family: 'Poppins',sans-serif
+  }
+  b{
+    font-weight: 600;
+  }
+  
+  button{
+      height: 5%;
+      width: 10%;
+      border-radius: 15px;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background: linear-gradient(135deg, #067BBF, #067BBF);
+    }
+    button:hover{
+      height: 5%;
+      width: 10%;
+      border-radius: 15px;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background: #5bacdf;
+    }

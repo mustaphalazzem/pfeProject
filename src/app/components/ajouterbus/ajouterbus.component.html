@@ -1,0 +1,54 @@
+<table class="table table-hover">
+    <thead>
+ <div style="margin-top: -10px;" class="table-responsive">
+    <div class="table-wrapper">
+      <div class="table-title">
+        <div class="row">
+          <div class="col-xs-5">
+            <h2>Ajouter <b>une bus</b></h2>
+          </div>
+          <div class="col-xs-7">
+            <a  class="btn btn-danger"><i class="material-icons">&#xE147;</i> <span>Creer une nouvelle
+                excursion</span></a>
+          </div>
+        </div>
+      </div>
+<div class="container">
+    <form [formGroup]="busForm" (ngSubmit)="savebus()">
+        <div  class ="submit-form">
+            <div>
+                <div class="form-group mb-3">
+                    <input [ngClass]="{'invalid' : busForm.controls['nb_place_bus'].invalid && submitted}"
+                        type="text"
+                        class="form-control"
+                        id="nb_place_bus"
+                        formControlName="nb_place_bus"
+                        placeholder="Nombre place de bus"
+                    />
+                </div>
+
+                <div class="form-group mb-3">
+                    <input [ngClass]="{'invalid' : busForm.controls['marque'].invalid && submitted}"
+                        class="form-control"
+                        id="marque"
+                        formControlName="marque"
+                        placeholder="Marque"
+                    />
+                </div>
+<!--                 
+                     <div class="form-group mb-3">
+                    <input [ngClass]="{'invalid' : busForm.controls['idagence'].invalid && submitted}"
+                        class="form-control"
+                        id="idagence"
+                        formControlName="idagence"
+                        placeholder="idagence"
+                    />
+                </div>  -->
+
+                
+                <button class="btn btn-danger">Ajouter</button>
+            </div>
+
+        </div>
+    </form>
+</div>

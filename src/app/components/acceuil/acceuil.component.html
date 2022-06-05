@@ -1,0 +1,121 @@
+<div class="hero-banner shade-1" style="background-color:rgba(0,0,0,0.51)">
+    <span class="hero-banner--gradient reflow" style="color:#000000"></span>
+    <div class="hero-banner__container shade-1" style="background-color:#000000">
+        <span class="hero-banner--gradient-mobile reflow" style="color:#000000"></span>
+        <div class="slider--hero-banner slick-initialized slick-slider">
+            <div class="slick-list draggable">
+                <div class="slick-track" style="opacity: 1; width: 17986px; transform: translate3d(-3174px, 0px, 0px);">
+                    <div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1" style="width: 1058px;">
+                        <div>
+                            <div class="type-box" data-type="shade-1" data-bgcolor="background-color:rgba(0,0,0,0.51)" data-bgcolorm="background-color:#000000" data-currentcolor="color:#000000" style="width: 100%; display: inline-block;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 1058px;" tabindex="-1">
+                        <div>
+                            <div class="type-box" data-type="shade-1" data-bgcolor="background-color:rgba(0,0,0,0.51)" data-bgcolorm="background-color:#000000" data-currentcolor="color:#000000" style="width: 100%; display: inline-block;"> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1058px;" tabindex="-1">
+                        <div>
+                            <div class="type-box" data-type="shade-1" data-bgcolor="background-color:rgba(0,0,0,0.51)" data-bgcolorm="background-color:#000000" data-currentcolor="color:#000000" style="width: 100%; display: inline-block;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" style="width: 1058px;">
+                        <div>
+                            <div class="type-box" data-type="shade-1" data-bgcolor="background-color:rgba(0,0,0,0.51)" data-bgcolorm="background-color:#000000" data-currentcolor="color:#000000" style="width: 100%; display: inline-block;">
+                                <img src="assets/images/banzart.jpeg" alt=" ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-banner--content loaded">
+            <div class="slider--hero-banner-content slick-initialized slick-slider">
+                <div class="slick-list draggable" style="height: 300px; width:400px">
+                    <div class="slick-track" style="opacity: 1; width: 3000px;">
+                        <div class="slider--hero-banner-content-item slick-slide" style="color: rgb(255, 255, 255); width: 350px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" data-color="color:#FFFFFF" data-slick-index="0" aria-hidden="true" tabindex="-1">   
+                        </div>
+                        <div class="slider--hero-banner-content-item slick-slide" style="color: rgb(255, 255, 255); width: 350px; position: relative; left: -332px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" data-color="color:#FFFFFF" data-slick-index="1" aria-hidden="true" tabindex="-1">
+                        </div>
+                        <div class="slider--hero-banner-content-item slick-slide slick-current slick-active" style="color: rgb(255, 255, 255); width: 350px; position: relative; left: -664px; top: 0px; z-index: 999; opacity: 1;" data-color="color:#FFFFFF" data-slick-index="2" aria-hidden="false">
+                            <P> <h1>Avec nous on peut découvrir tous la Tunisie</h1>
+                            <form>  
+                                 <div class="form-group mb-3">
+                                <div class="submit-form" id="test">
+                                    <input 
+                                    [formControl]="rechercheForm"
+                                        class="form-control"
+                                         type="text" 
+                                         id="destination"
+                                          name="destination"
+                                        value=""
+                                         placeholder="Choisir votre destination !"
+                                        class="css-1k7wk8z e4p0i2v2 js-bound">
+                                    <span class="datepicker-toggle">
+                                        <span class="datepicker-toggle-button"><i class="fa fa-calendar fa-3x" aria-hidden="true"></i>
+                                        </span>
+                                        <input type="date" class="datepicker-input"
+                                         id="date"
+                                            [formControl]="recherchedate"
+                                             name="date" 
+                                             (change)="rechercher()">
+                                    </span></div>
+                                              <button (click)="rechercher()" type="button" class="btn btn-danger" href=""
+                                              class="gtm-link-event btn btn--red " tabindex="0">
+                                              découvrir</button>   
+                                    </div>
+                            </form> 
+                        </div> 
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<div class="container">
+   <h1><strong>Des activités qui vont vous plaire</strong></h1>
+   <div class="pos">
+       <strong id="trie-text">TRIER</strong>
+   <span class="sort">
+    <span class="sort-button"><i class="fa fa-sort fa-2x" aria-hidden="true"></i>
+    </span>  
+    <select class="form-control" [formControl]="selectForm" (change)="trie()" id="sort-input" >
+        <option value="croissant">
+            Prix croissant
+        </option>
+        
+        <option value="decroissant">
+            Prix décroissant
+        </option>
+        
+    </select>
+</span>
+</div>
+    <div class="test">
+        <div class="row">
+            <div  style="margin-bottom: 30px;" class="col-md-6 col-lg-3" style="display:contents">
+
+            <div *ngFor="let excursion of excursions" style="margin-bottom: 30px;" class="col-md-6 col-lg-3">
+              
+                <div class="card" style="width: 18rem; cursor:pointer ; "  >
+                    <a (click)="excursionDetails(excursion._id)">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Eglise_Notre_Dame_du_Rosaire.JPG/220px-Eglise_Notre_Dame_du_Rosaire.JPG"  alt="..." style="height: 10rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{excursion.destination}}</h5>
+                        <p class="card-text">{{excursion.prix}}</p>
+                    </div></a>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+    <i class="fas fa-calendar-alt"></i>
+<i ng-show="rating >  = 1"
+    ng-hide="rating =0 " class="fa-regular fa-heart"></i>
+<i class="fa-solid fa-heart"></i>
